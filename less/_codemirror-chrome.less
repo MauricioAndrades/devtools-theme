@@ -138,3 +138,20 @@
 	outline: 1px solid @eh-editing-outline !important;
 	color: @global-text !important;
 }
+
+#-blink-dev-tools pre {
+  /* Reset some styles that the rest of the page might have set */
+	-webkit-border-radius: 0; border-radius: 0;
+  background: transparent;
+  border-width: 0;
+  color: inherit;
+  font-family: ModSansMonoOticon !important;
+  font-size: 14px !important;
+  line-height: 1.2em;
+  margin: 0;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  word-wrap: normal;
+  z-index: 2;
+}
