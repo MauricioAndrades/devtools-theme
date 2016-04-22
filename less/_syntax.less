@@ -23,12 +23,12 @@
 	.cm-js-atom { color: @js-atom !important; }
 	.cm-js-attribute { color: @js-attribute !important; }
 	.cm-js-builtin { color: @js-builtin !important; }
-	.cm-js-comment { color: @js-comment !important; font-style: italic; }
+	.cm-js-comment { color: @js-comment !important; }
 	.cm-js-def { color: @js-def !important; }
 	.cm-js-error { background: @js-error !important; color: @global-text !important; }
 	.cm-js-header { color: @js-header !important; }
 	.cm-js-hr { color: @js-hr !important; }
-	.cm-js-keyword { color: @js-keyword !important; font-style: italic; }
+	.cm-js-keyword { color: @js-keyword !important; }
 	.cm-js-link { color: @js-link !important; }
 	.cm-js-meta { color: @js-meta !important; }
 	.cm-js-number { color: @js-number !important; }
@@ -64,7 +64,7 @@
 	.cm-css-atom { color: @css-atom !important; }
 	.cm-css-builtin { color: @css-builtin !important; }
 	.cm-css-def { color: @css-def !important; }
-	.cm-css-comment { color: @css-comment !important; font-style: italic; }
+	.cm-css-comment { color: @css-comment !important; }
 	.cm-css-meta { color: @css-meta !important;}
 	.cm-css-number { color: @css-number !important; }
 	.cm-css-operator { color: @css-operator !important; }
@@ -93,7 +93,7 @@
 
 // Wrap in mixing for re-use
 .syntax-html() {
-	.cm-xml-comment { color: @xml-comment !important; font-style: italic !important; }
+	.cm-xml-comment { color: @xml-comment !important; }
 	.cm-xml-error { color: @xml-error  !important; }
 	.cm-xml-string { color: @xml-string !important; }
 	.cm-xml-tag { color: @xml-tag !important; }
@@ -102,7 +102,7 @@
 
 	.webkit-html-attribute-name { color: @xml-attribute !important;}
 	.webkit-html-attribute-value { color: @xml-string !important;}
-	.webkit-html-comment { color: @xml-comment!important;font-style:italic;}
+	.webkit-html-comment { color: @xml-comment!important;}
 	.webkit-html-resource-link,
 	.webkit-html-external-link { color: @xml-link!important;}
 	.webkit-html-tag,
@@ -150,20 +150,20 @@
 
 	// // Javascript
 	// // ==========================================================================
-	// .section .properties .name,
-	// .event-properties .name,
-	// .console-formatted-object .name { color: @js-obj-name !important; }
-	// .console-formatted-object,
-	// .console-formatted-array { color: @js-obj-array !important; }
-	// .console-formatted-function { color: @js-obj-function !important; }
-	// .console-formatted-number { color: @js-obj-number !important; }
-	// .console-formatted-boolean { color: @js-obj-boolean !important; }
-	// .console-object-preview { color: @js-obj-preview !important; }
-	// .console-formatted-regexp { color: @js-obj-regexp !important; }
-	// .console-formatted-string { color: @js-obj-string !important; }
-	// .console-formatted-undefined { color: @js-obj-undefined !important; }
-	// .json .title { color: @global-text !important;}
-	// .json .separator { color: darken(@global-text, 35%) !important;}
+	.section .properties .name,
+	.event-properties .name,
+	.console-formatted-object .name { color: @js-obj-name !important; }
+	.console-formatted-object,
+	.console-formatted-array { color: @js-obj-array !important; }
+	.console-formatted-function { color: @js-obj-function !important; }
+	.console-formatted-number { color: @js-obj-number !important; }
+	.console-formatted-boolean { color: @js-obj-boolean !important; }
+	.console-object-preview { color: @js-obj-preview !important; }
+	.console-formatted-regexp { color: @js-obj-regexp !important; }
+	.console-formatted-string { color: @js-obj-string !important; }
+	.console-formatted-undefined { color: @js-obj-undefined !important; }
+	.json .title { color: @global-text !important;}
+	.json .separator { color: darken(@global-text, 35%) !important;}
 }
 
 
@@ -182,8 +182,3 @@
 	position: relative;
 	left: 4.4px;
 }
-
-
-
-
-

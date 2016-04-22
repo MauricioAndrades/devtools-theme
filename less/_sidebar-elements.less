@@ -1,13 +1,16 @@
 // ==========================================================================
 // Elements/Sources Right Sidebar
 // ==========================================================================
-
+.styles-section.matched-styles.monospace.navigable {
+	font-size: 11px !important;
+}
 // Each selector section
 .styles-section {
 	padding: 4px 0 !important;
 	margin: 0 10px;
 	border-top: 1px solid @style-separator !important;
 	border-bottom: none !important;
+	font-size: 11px;
 
 	&:first-child{
 		border-top: none !important;
@@ -23,6 +26,12 @@
 
 	.value {
 		color: @style-value !important;
+		font-size: 11px;
+		font-family: ModSansMonoOticon-Light;
+	}
+
+	.computed {
+		font-size: 12px;
 	}
 
 	// edit mode
@@ -44,7 +53,8 @@
 
 	.body,
 	.monospace {
-		font-family: ModSansMonoOticon;
+		font-size: 11px !important;
+		font-family: ModSansMonoOticon-Light !important;
 		color: @style-selector-text !important;
 	}
 
@@ -134,6 +144,10 @@
 	&.media-matches .media.editable-media .media-text {
 		color: @global-text !important;
 	}
+}
+
+.styles-section-subtitle {
+	font-size: 15px !important;
 }
 
 // Magnifying glyph in computed panel when hovering over rule
@@ -232,7 +246,7 @@
 
 // CSS Selector
 .webkit-css-property,
-.styles-section .properties > li .webkit-css-property { color: @css-property !important; font-weight:bold; font-family: ModSansMonoOticon; line-height: 1.5em; font-size: 13px;}
+.styles-section .properties > li .webkit-css-property { color: @css-property !important; font-weight:bold; font-family: ModSansMonoOticon-Light; line-height: 1.5em; font-size: 14px !important;}
 
 
 // Highlighted Filtered Element (Filter box)

@@ -5,19 +5,20 @@
 @theme-type: dark;
 
 // Global Settings
-@global-accent    : #bdff00;
+@global-accent    : #a4e60a;
 @global-arrow     : #8c8c8c;
 @global-background: #222;
 @global-boxshadow : rgba(17,17,17,.6);
-@global-divider   : lighten(@global-background, 5%);
-@global-hover     : lighten(@global-background, 5%);
+@global-divider   : lighten(@global-background, 2%);
+@global-hover     : #333333;
 @global-input     : #111;
-@global-selected  : hsla(216, 19%, 15%, 0.47);
-@global-text      : #ffffff;
+@global-selected  : #373b41;
+@global-text      : #F1F1F1;
 @global-label     : #626262;
 @global-warn      : #db0;
-@global-error     : #ff5a5a;
+@global-error     : #db1818;
 @global-textshadow: darken(@global-background, 2%);
+@mod-selected: #2F343B;
 
 // JavaScript
 @js-atom      : #FFCC00;
@@ -43,12 +44,12 @@
 @js-obj-array    : #13986B;
 @js-obj-boolean  : #8C3DF5;
 @js-obj-function : #CCFF00;
-@js-obj-name     : #F1E8D7;
+@js-obj-name     : #cf289b;
 @js-obj-number   : #8C3DF5;
 @js-obj-preview  : #819090;
 @js-obj-regexp   : #E68E20;
-@js-obj-string   : #323C4E;
-@js-obj-undefined: #ad4e4e;
+@js-obj-string   : #FFFFFF;
+@js-obj-undefined: #7416b5;
 
 // CSS
 @css-at-rule   : #9F8624;
@@ -85,7 +86,7 @@
 @tab-color-top      : lighten(@global-background, 18%);
 @tab-color-bottom   : lighten(@global-background, 8%);
 @tab-highlighted    : @global-accent;
-@tab-label          : #999;
+@tab-label          : #d0cccc;
 @tab-label-selected : #455B62;
 @tab-label-unsaved  : #db0;
 
@@ -100,9 +101,9 @@
 @glyph-inactive: lighten(@global-background, 35%);
 
 // Crumbs
-@crumb-selected-background: @global-selected;
-@crumb-selected-text      : #F1E9D8;
-@crumb-text               : #FFCC00;
+@crumb-selected-background: #373b41;
+@crumb-text: #e4a318;
+@crumb-selected-text: #fbfbfb;
 
 // Console
 @console-default-text: @global-text;
@@ -111,7 +112,7 @@
 
 // Dialog [Ctrl/Cmd + O | Ctrl/Cmd + Shift + O]
 @dialog-background     : lighten(@global-background, 5%);
-@dialog-border         : lighten(@global-background, 10%);
+@dialog-border         : lighten(@global-background, 7%);
 @dialog-item-background: @global-background;
 @dialog-item-highlight : @global-accent;
 @dialog-item-text      : lighten(@global-text, 10%);
@@ -159,8 +160,8 @@
 // Find
 @find-header-background   : lighten(@global-background, 3%);
 @find-header-text         : #888;
-@find-highlight-background: @global-accent;
-@find-highlight-text      : #000;
+@find-highlight-background: rgb(34, 33, 34);
+@find-highlight-text      : #c9c817;
 
 // Forms
 @form-button-background: lighten(@global-background, 5%);
@@ -168,7 +169,7 @@
 @form-button-pressed   : inset 0 1px 1px 0 darken(@global-background, 5%), 0 1px 1px 0 lighten(@global-background, 5%);
 @form-button-text      : darken(@global-text, 10%);
 @form-input-background : lighten(@global-background, 5%);
-@form-input-border     : lighten(@global-background, 10%);
+@form-input-border     : lighten(@global-background, 2%);
 @form-input-text       : lighten(@global-text, 10%);
 @form-label-text       : @global-text;
 
@@ -198,10 +199,10 @@
 
 // Table/Sidebar Selections | Breakpoints
 @selection-background: @global-selected;
-@selection-border    : lighten(@selection-background, 15%);
+@selection-border    : @global-selected;
 @selection-text      : lighten(@global-text, 10%);
 @hover-background: @global-hover;
-@hover-border    : lighten(@hover-background, 10%);
+@hover-border    : lighten(@hover-background, 4%);
 @hover-text      : @global-text;
 
 // Sources Tab
@@ -218,7 +219,7 @@
 @table-secondary: lighten(@global-background,2%);
 
 // Timeline
-@timeline-expandable-border   : lighten(@global-background, 35%);
+@timeline-expandable-border   : lighten(@global-background, 10%);
 @timeline-graph-bar           : rgba(200,200,200,.3);
 @timeline-graph-bar-background: rgba(200,200,200,.2);
 @timeline-overview-background : @global-background;
