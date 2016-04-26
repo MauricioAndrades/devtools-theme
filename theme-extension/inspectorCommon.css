@@ -17,8 +17,7 @@
 .platform-mac .monospace,
 .platform-mac .source-code {
     font-size: 11px !important;
-    font-family: ModSansMonoOticon;
-    line-height: 1.4;
+    /* font-family: Menlo, monospace; */
 }
 
 :host-context(.platform-windows) .monospace,

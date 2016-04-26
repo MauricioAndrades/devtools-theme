@@ -16,6 +16,7 @@
 		}
 
 		.section > .header .title {
+			font-size: 12px;
 			color: @color !important;
 		}
 
@@ -30,12 +31,12 @@
 // console frame
 #console-messages {
 	border-top: none !important;
-	font-family: ModSansMonoOticon;
+	font-family: ModSansMonoOticon-Light !important;
 }
 
 .console-message {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px !important;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px !important;
 	border-bottom: none !important;
 
 }
@@ -52,8 +53,8 @@
 }
 
 #console-prompt {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px !important;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px !important;
 	color: @console-input-text !important;
 	border-top: none !important;
 	& { border-top: none; };
@@ -62,8 +63,8 @@
 
 // user input
 .console-user-command {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px !important;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px !important;
 	border-top: none !important;
 	border-bottom: none !important;
 	width: 100% !important;
@@ -71,14 +72,14 @@
 }
 
 #console-messages .console-user-command > .console-message-text {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px !important;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px !important;
 	vertical-align: text-top !important;
 }
 
 .console-adjacent-user-command-result {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px !important;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px !important;
 	& { background-color: @- !important; .contrast(@global-background, 2%) };
 	& { border-top: 1px solid @- !important; .contrast(@global-background, 3%) };
 	& { border-bottom: 1px solid @- !important; .contrast(@global-background, 2%, invert) };
@@ -87,16 +88,16 @@
 // results with tree navigation
 .console-message .children li,
 .console-user-command .children li {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px;
 	 margin: 1px 0 !important;
 }
 
 #console-messages {
 
 	.console-user-command > .console-message-text {
-		font-family: ModSansMonoOticon !important;
-		font-size: 13px !important;
+		font-family: ModSansMonoOticon-Light !important;
+		font-size: 16px !important;
 		color: @console-default-text !important;
 	}
 
@@ -126,8 +127,8 @@
 }
 
 #console-messages .console-message {
-	font-family: ModSansMonoOticon !important;
-	font-size: 13px;
+	font-family: ModSansMonoOticon-Light !important;
+	font-size: 16px !important;
 	color: @console-default-text !important;
 }
 
@@ -178,7 +179,11 @@
 }
 
 // js syntax
-.console-object-preview .name { color: @js-obj-name !important; }
+.console-object-preview .name {
+	color: @js-obj-name !important;
+	font-variant: normal;
+	font-family: ModSansMonoOticon-Light;
+	}
 
 .object-value-object,
 .object-value-map,

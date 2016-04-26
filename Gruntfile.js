@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compress');
 	grunt.loadNpmTasks('grunt-bump');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 	grunt.initConfig({
 		pkg: '<json:package.json>',
@@ -47,10 +48,21 @@ module.exports = function(grunt) {
 				tasks: ['less:generate']
 			},
 
+		},
+		cssmin: {
+		  target: {
+		    files: [{
+		      expand: true,
+		      src: ['./google-css/inspectorCommon.css', './theme-extension/stable.css', './theme-extension/inspector.css'],
+		      dest: './release/stable.css',
+		      ext: '.css'
+		    }]
+		  }
 		}
 
 	});
 
 	grunt.registerTask('default', ['less:generate']);
 	grunt.registerTask('package', ['less:build', 'compress']);
+	grunt.registerTask('css',['cssmin']);
 };
