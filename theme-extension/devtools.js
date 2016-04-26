@@ -1,8 +1,8 @@
 var xhr = new XMLHttpRequest(),
-	stylesheet = 'canary-stable.css';
+	stylesheet = './canary.css';
 
-if (/Chrome\/(\d\d)/.exec(navigator.userAgent)[1] > 48) {
-  stylesheet = 'canary-stable.css';
+if (/Chrome\/(\d\d)/.exec(navigator.userAgent)[1] > 49) {
+  stylesheet = './canary.css';
 }
 
 xhr.open("GET", "/" + stylesheet, false);
